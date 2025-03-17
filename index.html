@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portföyüm</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="template.css">
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#personal_information_sec">Hakkımda</a></li>
+                <li><a href="#projects">Projelerim</a></li>
+                <li><a href="#contact-with-me">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+
+    <section id="personal_information_sec" class="personal_information_sec">
+        <div class="personal_information">
+            <img src="./images/vesikalik.jpeg" alt="Profil Fotoğrafı">
+            <h2>Emir Maden</h2>
+            <p>Ankara Üniversitesi</p>
+            <p>Yazılım Mühendisliği</p>
+        </div>
+        
+        
+        <div id= "skills" class="skills">
+            <h3>Yetenekler</h3>
+            <div class="skill">
+                <span>C & C++</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projelerim</h2>
+        
+        <div class="project">
+            <h3>Otel Rezervasyon Sistemi</h3>
+            <div class = "project-main">
+                <div class="project-info">
+                    <img src="./images/Screenshot_5.png" alt="Proje 1 Görseli">
+                </div>
+                <div class="explanation">
+                    <p>Bu projede HTML & CSS ve Node.js ile geliştirilip kullanıcıların kayıt olup rezervasyon yapabildiği bir sistem geliştirilmiştir.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Warzone Warriors</h3>
+            <div class = "project-main">
+                <div class="project-info">
+                    <img src="./images/Screenshot_5.png" alt="Proje 1 Görseli">
+                </div>
+                    <div class="explanation">
+                    <p>Unity oyun motoruyla geliştirmiş olduğumuz bu oyun, sıra tabanlı strateji oyunudur. Birçok farklı senaryo ve farklı mekanik barındıran bu oyun, multiplayer seçeneğini de barındırmaktadır.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h3>Kütüphane Yönetim Sistemi</h3>
+            <div class = "project-main">
+                <div class="project-info">
+                    <img src="./images/Screenshot_5.png" alt="Proje 1 Görseli">
+                </div>
+                    <div class="explanation">
+                    <p>Kullanıcıların kitap rezervasyonu yapabildiği bu sistem bir online kütüphane mantığıyla tasarlanmıştır. C++ & Qt ile geliştirilmiştir.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="project">
+            <h3>Sudoku</h3>
+            <div class = "project-main">
+                <div class="project-info">
+                    <img src="./images/Screenshot_5.png" alt="Proje 1 Görseli">
+                </div>
+                    <div class="explanation">
+                        <p>Sudoku ve yanında Irregular Sudoku da bulunan bu uygulama, C++ & Qt ile geliştirilmiştir.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="project">
+            <h3>Unnamed Project</h3>
+            <div class = "project-main">
+                <div class="project-info">
+                    <img src="./images/Screenshot_5.png" alt="Proje 1 Görseli">
+                </div>
+                    <div class="explanation">
+                <p>Bu proje daha geliştirilme aşamasında olduğundan bir isim konulmadı. Proje içeriği ise siyasi olayların olacağı karakter bazlı bir oyun. C++ & OpenGL ile geliştiriyorum.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section id="contact-with-me" class="contact-with-me">
+        <h2>Benimle İletişime Geçin</h2>
+        <form action="http://localhost:3000/send-mail" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Adınız</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea id="message" name="message" rows="4" placeholder="Mesajınızı yazın" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Gönder</button>
+        </form>
+    </section>
+
+</body>
+</html>
